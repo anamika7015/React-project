@@ -9,7 +9,7 @@ function customRender(reactElement, container){
     domElement.innerHTML = reactElement.children
     for(const prop in reactElement.props){
         if(prop === 'children') continue;
-        domElement.setAttributes(prop,reactElement.props[prop])
+        domElement.setAttributes(prop, reactElement.props[prop])
     }
     container.appendChild(domElement)
 }
